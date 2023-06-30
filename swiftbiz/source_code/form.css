@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@200;300;500&display=swap');
+:root {
+    --light: rgb(245, 245, 245);
+    --background-color: rgb(239, 244, 255);
+    --component-bg: rgb(246, 251, 253);
+    --text-dark: #041a36;
+    --text-grey: #b2b2b2;
+    --dark-blue: rgb(13, 50, 134);
+    --card-border-radius: 2rem;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --bg-white: #fff;
+
+    --orange: #d24e01;
+    --lemon: #adcf1a;
+    --pink: #fda4ba;
+    --straw: #fcac4e;
+}
+* {
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100Vh;
+}
+
+.form-container {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--bg-white);
+    box-shadow: var(--box-shadow);
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+form input {
+    width: 100%;
+    padding: 10px 3px;
+    border: 1px solid rgb(239, 244, 255);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--orange);
+    cursor: pointer;
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.bottom button:last-child {
+    padding: 8px 10px;
+    border-radius: 3px;
+    color: var(--bg-white);
+    background: var(--text-dark);
+}
+.hidden {
+    display: none;
+}
+.span1{
+    color: var(--lemon);
+}
+.span2 {
+    color: var(--orange);
+}
+.option{
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.option button {
+    color: var(--text-grey);
+    background: var(--light);
+    padding: 8px 0;
+    width: 48%;
+    border-radius: 5px;
+}
+.option button.active {
+    color: var(--bg-white);
+    background: var(--text-dark);
+}

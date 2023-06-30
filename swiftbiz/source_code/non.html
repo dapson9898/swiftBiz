@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftBiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/cecfb861f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">  
+</head>
+<body>
+    <div id="backdrop" class='visible' ></div>
+   <div class="container">
+    <!-- Side menu container -->
+        <aside>
+            <div class="logo">
+                <h1>SWIFT<span>BIZ</span></h1>
+                <small>A home for small and large Business</small>
+            </div>
+            <div class="products">
+                <div>
+                    <h4>30</h4>
+                    <small>Sells</small>
+                </div>
+                <div>
+                    <h4>25</h4>
+                    <small>Purchase</small>
+                </div>
+            </div>
+            <div class="menu">
+                <h5>MENU</h5>
+                <ul>
+                    <li id="dashboard"><a href="#"><span><i class="fa-solid fa-house"></i></span><h6>DASHBOARD</h6></a></li>
+                    <li id="cashbook"><a href="#"><span><i class="fa-solid fa-chart-simple"></i></span><h6>CASHBOOK</h6></a></li>
+                    <li id="creditbook"><a href="#"><span><i class="fa-solid fa-list"></i></span><h6>CREDITBOOK</h6></a></li>
+                    <li id="report"><a href="#"><span><i class="fa-solid fa-bookmark"></i></span><h6>REPORTS</h6></a></li>
+                    <li id="account"><a href="#"><span><i class="fa-solid fa-sun"></i></span><h6>ACCOUNT</h6></a></li>
+                </ul>
+            </div>
+            <div class="theme">
+                <div class="icons">
+                    <span class="active"><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </div>
+                <small>Dark Mode</small>
+            </div>
+        </aside>
+    <!-- End Side menu container -->
+    <!-- Middle section container -->
+        <main>
+
+            <header>
+                <div class="heading">
+                    <h4>DASHBOARD</h4>
+                </div>
+                <div class="months">
+                    <select>
+                        <option>month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                    </select>
+                </div>
+                <div class="users">
+                    <div>
+                        <h6>Oladapson</h6>
+                        <small>Online</small>
+                    </div>
+                    <img src="../assets/profile-8.jpg"/>
+                </div>
+            </header>
+
+            <!-- Dashboard component -->
+            <div class="dashboard-components">
+                <div class="cards">
+                    <article>
+                        <h5><span><i class="fa-solid fa-chart-simple"></i></span></h5>
+                        <h4>N20,000</h4>
+                        <p>Total Capital</p>
+                    </article>
+    
+                    <article>
+                        <h5><span class="span2"><i class="fa-solid fa-chart-simple"></i></span></h5>
+                        <h4>N25,000</h4>
+                        <p>Total Income</p>
+                    </article>
+    
+                    <article>
+                        <h5><span class="span3"><i class="fa-solid fa-chart-simple"></i></span></h5>
+                        <h4>N10,000</h4>
+                        <p>Total Spend</p>
+                    </article>
+    
+                    <article>
+                        <h5><span class="span4"><i class="fa-solid fa-chart-simple"></i></span></h5>
+                        <h4>N5,000</h4>
+                        <p>Total Profit</p>
+                    </article>
+                </div>
+            </div>
+            <!-- End of Dashboard components -->
+
+            <!-- Cashbook component -->
+            <div class="cashbook-components">
+                <section class="list-of-cashbook">
+                    <h3>List of Cashbooks</h3>
+
+                    <div class="cash-card">
+                        <div class="card-head">
+                            <h5>Cashbook Name</h5>
+                            <button>Close Book</button>
+                        </div>
+                        <div class="card-date">
+                            <span>From: 20/02/2023</span>
+                            <span>To: 20/03/2023</span>
+                        </div>
+                    </div>
+                    <div class="cash-card">
+                        <div class="card-head">
+                            <h5>Cashbook Name</h5>
+                            <button class="closed">Closed Book</button>
+                        </div>
+                        <div class="card-date">
+                            <span>From: 20/02/2023</span>
+                            <span>To: 20/03/2023</span>
+                        </div>
+                    </div>
+                    <div class="cash-card">
+                        <div class="card-head">
+                            <h5>Cashbook Name</h5>
+                            <button>Close Book</button>
+                        </div>
+                        <div class="card-date">
+                            <span>From: 20/02/2023</span>
+                            <span>To: ----------</span>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="cashbook-container">
+                    <!-- cashbook contents -->
+                    <div class="query-buttons">
+                        <button id="credit-btn">Credit</button>
+                        <button id="debit-btn">Debit</button>
+                    </div>
+                    <div class="cashbook-body">
+                        <div class="cashbook-header">
+                            <h4>Cashbook Name</h4>
+                        </div>
+                        <div class="cashbook-content">
+                            <!-- content coming soon -->
+                            <div class="activity">
+                                <div class="name-amount">
+                                    <button>+</button>
+                                    <h5>Name of activity</h5>
+                                    <h5>10,000.00</h5>
+                                </div>
+                                <div class="p-container">
+                                   <p class="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum quod consequuntur. Cum sint dignissimos praesentium architecto nostrum nisi facilis?</p> 
+                                </div>
+                            </div>
+
+                            <div class="activity">
+                                <div class="name-amount">
+                                    <button>+</button>
+                                    <h5>Name of activity</h5>
+                                    <h5>10,000.00</h5>
+                                </div>
+                                <div class="p-container">
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum quod consequuntur. Cum sint dignissimos praesentium architecto nostrum nisi facilis?</p> 
+                                </div>
+                            </div>
+
+                            <div class="activity">
+                                <div class="name-amount">
+                                    <button>+</button>
+                                    <h5>Name of activity</h5>
+                                    <h5>10,000.00</h5>
+                                </div>
+                                <div class="p-container">
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum quod consequuntur. Cum sint dignissimos praesentium architecto nostrum nisi facilis?</p> 
+                                </div>
+                            </div>
+
+                            <div class="activity">
+                                <div class="name-amount">
+                                    <button>+</button>
+                                    <h5>Name of activity</h5>
+                                    <h5>10,000.00</h5>
+                                </div>
+                                <div class="p-container">
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ipsum quod consequuntur. Cum sint dignissimos praesentium architecto nostrum nisi facilis?</p> 
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cashbook-footer">
+                            <button><span><i class="fa-solid fa-download"></i></span>PDF</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End of Cashbook component -->
+
+            <!-- Credit book component -->
+            <div class="creditbook-components">
+                <h3>+2348161702635</h3>
+                <section class="section">
+                    <section class="list-of-creditbook">
+                        <div class="credit-sec1">
+                            <button class="customer active">Customers</button>
+                            <button class="supplier">Suppliers</button>
+                        </div>
+                        <div class="credit-sec2">
+                            <h4>3 Customers</h4>
+                            <div class="buttons">
+                                <button class="pdf"><i class="fa-solid fa-file-pdf"></i></button>
+                                <button class="add"><i class="fa-solid fa-user-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="credit-sec3">
+                            <div class="sec-top">
+                                <div class="sec-left">
+                                    <p>I got</p>
+                                    <p>1000</p>
+                                </div>
+                                <div class="sec-right">
+                                    <p>I gave</p>
+                                    <p>1000</p>
+                                </div>
+                            </div>
+                            <div class="sec-but">
+                                <div class="search-bar"><span><i class="fa-solid fa-magnifying-glass"></i></span><input type="search" placeholder="Search"></div>
+                                <button id="filter"><i class="fa-solid fa-sort"></i></button>
+                                <div class="filter hidden">
+                                    <div class="filter-head">
+                                        <h3>Filter</h3>
+                                        <button id="close-filter">close</button>
+                                    </div>
+                                    <div class="sort-by-sub-one">
+                                        <button class="active">All</button>
+                                        <button>Got</button>
+                                        <button>Gave</button>
+                                        <button>Settled</button>
+                                    </div>
+                                    <div class="sort-by-sub-two">
+                                        <input type="radio" name="sort"/> <small>Recent</small><br>
+                                        <input type="radio" name="sort"/> <small>Oldest</small><br>
+                                        <input type="radio" name="sort"/> <small>Highest Amount</small><br>
+                                        <input type="radio" name="sort"/> <small>least Amount</small><br>
+                                        <input type="radio" name="sort"/> <small>By Name (A-Z)</small><br>
+                                    </div>
+                                    <div class="sort-btn">
+                                        <button>cancel</button>
+                                        <button class="sort">Sort</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credit-sec4" id="demand">
+                            <div class="credit active">
+                                <div class="creditleft">
+                                    <div class="img">M</div>
+                                    <section>
+                                        <p>Emjay Tanko</p>
+                                        <small>Balance N <span> 5000 </span> </small>
+                                    </section>
+                                </div>
+                                <div class="creditright">
+                                    <p>N 3000</p>
+                                    <small>I got</small>
+                                </div>
+                            </div>
+
+                            <div class="credit">
+                                <div class="creditleft">
+                                    <div class="img">M</div>
+                                    <section>
+                                        <p>Emjay Tanko</p>
+                                        <small>Balance N <span> 5000 </span> </small>
+                                    </section>
+                                </div>
+                                <div class="creditright">
+                                    <p>N 3000</p>
+                                    <small>I got</small>
+                                </div>
+                            </div>
+
+                            <div class="credit">
+                                <div class="creditleft">
+                                    <div class="img">M</div>
+                                    <section>
+                                        <p>Emjay Tanko</p>
+                                        <small>Balance N <span> 5000 </span> </small>
+                                    </section>
+                                </div>
+                                <div class="creditright">
+                                    <p>N 3000</p>
+                                    <small>I got</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- sdfjkv tyui asdcvyubajs cvu -->
+                        <div class="credit-sec4" id="supply">
+                            <div class="credit active">
+                                <div class="creditleft">
+                                    <div class="img">M</div>
+                                    <section>
+                                        <p>Yinka Tanko</p>
+                                        <small>Balance N <span> 5000 </span> </small>
+                                    </section>
+                                </div>
+                                <div class="creditright">
+                                    <p>N 3000</p>
+                                    <small>I got</small>
+                                </div>
+                            </div>
+
+                            <div class="credit">
+                                <div class="creditleft">
+                                    <div class="img">M</div>
+                                    <section>
+                                        <p>Sadik Tanko</p>
+                                        <small>Balance N <span> 5000 </span> </small>
+                                    </section>
+                                </div>
+                                <div class="creditright">
+                                    <p>N 3000</p>
+                                    <small>I got</small>
+                                </div>
+                            </div>
+
+                            <div class="credit">
+                                <div class="creditleft">
+                                    <div class="img">M</div>
+                                    <section>
+                                        <p>Anna Tanko</p>
+                                        <small>Balance N <span> 5000 </span> </small>
+                                    </section>
+                                </div>
+                                <div class="creditright">
+                                    <p>N 3000</p>
+                                    <small>I got</small>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <section class="activity-creditbook">
+                        <div class="details">
+                            <div class="detail1">
+                                <p><span id="current-client"></span></p>
+                                <small>View contact detail <span></span></small>
+                            </div>
+                            <div class="detail2">
+                                <button id="calenderBtn"><span><i class="fa-solid fa-calendar-days"></i></span>All<span><i class="fa-solid fa-angle-up"></i></span></button>
+                                <button><span><i class="fa-solid fa-download"></i></span>Download</button>
+                                <div class="calender hidden" id="calender">
+                                    <div class="calender-header">
+                                        <button id="prevBtn">Prev</button>
+                                        <h2 id="month-and-year"></h2>
+                                        <button id="nex-btn">Next</button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="days"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bal">
+                            <div class="bal1">
+                                <p>Balance</p>
+                                <span>N 5 000</span>
+                            </div>
+                            <div class="bal2">
+                                <div class="summ">
+                                    <p>I got N<span>13 000</span></p>
+                                    <p>I gave N<span>13 000</span></p>
+                                </div>
+                                <div class="butt">
+                                    <button>I got</button>
+                                    <button>I  gave</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transactions">
+                            <p>3 Transactions</p>
+                            <div class="trans-list">
+                                <div class="trans">
+                                    <div class="transleft">
+                                        <div class="img"><span><i class="fa-solid fa-arrow-up"></i></span></div>
+                                        <section>
+                                            <p>May 11 at 13:55</p>
+                                            <small>Balance N <span> 5000 </span> </small>
+                                        </section>
+                                    </div>
+                                    <div class="transright">
+                                        <p>N 3000</p>
+                                        <small>I got</small>
+                                    </div>
+                                </div>
+
+                                <div class="trans">
+                                    <div class="transleft">
+                                        <div class="img"><span><i class="fa-solid fa-arrow-up"></i></span></div>
+                                        <section>
+                                            <p>May 11 at 13:55</p>
+                                            <small>Balance N <span> 5000 </span> </small>
+                                        </section>
+                                    </div>
+                                    <div class="transright">
+                                        <p>N 3000</p>
+                                        <small>I got</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <!-- End of Credit book component -->
+
+            <!-- Reports component -->
+            <div class="report-components">
+                <div class="report-nav">
+                    <h4>Reports</h4>
+                    <div class="credit-report">
+                        <h4>Credit report</h4>
+                        <div class="creditleft report">
+                            <div class="img">M</div>
+                            <section>
+                                <p>Customer Report</p>
+                                <button>&gt;</button>
+                            </section>
+                        </div>
+                        <div class="creditleft report">
+                            <div class="img">M</div>
+                            <section>
+                                <p>Supplier Report</p>
+                                <button>&gt;</button>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="credit-report cash-book">
+                        <h4>Cashbook report</h4>
+                        <div class="creditleft report">
+                            <div class="img">M</div>
+                            <section>
+                                <p>Cashbook Report</p>
+                                <button>&gt;</button>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="report-body">
+                   <div class="report body-top">
+                    <div class="report-search">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span><input type="search" placeholder="Search">
+                    </div>
+                    <button><span><i class="fa-solid fa-download"></i></span>Download</button>
+                   </div>
+                   <div class="report body-middle">
+                    <div class="balance-report">
+                        <h5>Starting balance <span id="starting-balance">0.0NGN</span></h5>
+                        <p>I got <span id="my-profit">100,000.0NGN</span></p>
+                        <p>I got <span id="my-spend">25,000.0NGN</span></p>
+                        <h5>General balance <span id="General-balance">75,000.0NGN</span></h5>
+                    </div>
+                    <div class="number-of-contacts">
+                        <h5>Number of contacts: <span is="customer-number">4</span></h5>
+                        <h5>Number of transactions: <span is="transaction-number">10</span></h5>
+                    </div>
+                   </div>
+                   <div class="report body-bottom">
+                    <table>
+                        <tr>
+                            <th>Date</th>
+                            <th>Contact</th>
+                            <th>Details</th>
+                            <th>I got</th>
+                            <th>I gave</th>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot">99.0NGN</td>
+                            <td id="igave"></td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot"></td>
+                            <td id="igave">99.0NGN</td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot">99.0NGN</td>
+                            <td id="igave"></td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot">99.0NGN</td>
+                            <td id="igave"></td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot"></td>
+                            <td id="igave">99.0NGN</td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot"></td>
+                            <td id="igave">99.0NGN</td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot"></td>
+                            <td id="igave">99.0NGN</td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot">99.0NGN</td>
+                            <td id="igave"></td>
+                        </tr>
+                        <tr>
+                            <td>June 9 at 10:48</td>
+                            <td>07025567788</td>
+                            <td>Blah bla blah</td>
+                            <td id="igot"></td>
+                            <td id="igave">99.0NGN</td>
+                        </tr>
+                    </table>
+                   </div>
+                </div>
+            </div>
+            <!--End of report component -->
+            <!-- Account component -->
+            <div class="account-component">
+                <div class="account-form">
+                    <h4>My information</h4>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td>Name</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" value="+2347025654751" readonly>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Add your name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Business Name</td>
+                                <td>Business Category</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Insert Business name">
+                                </td>
+                                <td>
+                                    <select>
+                                        <option></option>
+                                        <option>Shop</option>
+                                        <option>Wholeseler</option>
+                                        <option>Distributor</option>
+                                        <option>Fabrication</option>
+                                        <option>Services</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Business type</td>
+                                <td>Address</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option></option>
+                                        <option><h5>Retails</h5></option>
+                                        <option>Groceries</option>
+                                        <option>Electronics and home appliance</option>
+                                        <option>Clothes and fashion</option>
+                                        <option>Bookstores</option>
+                                        <option>Jewelry</option>
+                                        <option>Cosmetics</option>
+                                        <option>Tools and hardware store</option>
+                                        <option>Construction materials</option>
+                                        <option>Car parts</option>
+                                        <option>Gas station</option>
+                                        <option>Agricultural products</option>
+                                        <option>Fruit snd veggles store</option>
+                                        <option>Fish shop</option>
+                                        <option>Bakery</option>
+                                        <option><h5>Services</h5></option>
+                                        <option>Professional services</option>
+                                        <option>Transportation &amp; logistics</option>
+                                        <option>Real Estate</option>
+                                        <option>Medical services</option>
+                                        <option>Car rental &amp; repair</option>
+                                        <option>Insurance</option>
+                                        <option>Other Services</option>
+                                        <option><h5>Mobile &amp; Technology</h5></option>
+                                        <option>Electronics</option>
+                                        <option>Mobile recharge, internet and financial services</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Add your Address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Add your City">
+                                </td>
+                            </tr>
+                            <tr>
+                                <div class="update-btn">
+                                    <td><button>Cancel</button></td>
+                                    <td><button class="update-btn">Update infor</button></td>
+                                </div>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <!--End od account component -->
+        </main>
+   </div>
+   <!-- Models -->
+
+   <!-- Form for new customer -->
+   <div class="hidden-forms">
+    <form action="" id="add-cust">
+        <div class="head">
+            <h4>Create new customer</h4>
+            <button>Close</button>
+        </div>
+        <div class="title">
+            <button class="active" id="cus">Customer</button>
+            <button id="sup">Supplier</button>
+        </div>
+        <div class="form">
+            <label for="name">Contact name</label>
+            <input type="text" placeholder="Contact name">
+            <label for="phone">Phone number</label>
+            <input type="text" placeholder="Phone number">
+        </div>
+        <div class="bottom">
+            <button class="cancel">Cancel</button>
+            <button class="validate">Validate</button>
+        </div>
+       </form>
+    
+        <!-- Form for new transaction (income) -->
+       <form action="" id="add-money">
+        <div class="head">
+            <h4>New Transaction</h4>
+            <button>Close</button>
+        </div>
+        <div class="form">
+            <label for="name">I got</label>
+            <input type="text" placeholder="0">
+            <label for="phone">Details</label>
+            <input type="text" placeholder="Details">
+        </div>
+        <div class="bottom">
+            <button class="cancel">Cancel</button>
+            <button class="validate">Save</button>
+        </div>
+       </form>
+    
+        <!-- Form for new transaction (outgoing) -->
+        <form action="" id="minus-money">
+            <div class="head">
+                <h4>New Transaction</h4>
+                <button>Close</button>
+            </div>
+            <div class="form">
+                <label for="name">I gave</label>
+                <input type="text" placeholder="0">
+                <label for="phone">Details</label>
+                <input type="text" placeholder="Details">
+            </div>
+            <div class="bottom">
+                <button class="cancel">Cancel</button>
+                <button class="validate">Save</button>
+            </div>
+       </form>
+    
+   </div>
+
+   <script src="./app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@200;300;500&display=swap');
+
+:root {
+    --dark: #1F1F1F;
+    --light: rgb(245, 245, 245);
+    --text-blue: #041a36;
+    --text-grey: #b2b2b2;
+    --yellow: #ffb700;
+    --pink: rgb(239, 99, 123);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: var(--light);
+}
+#backdrop{
+    /* display: block; */
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    background: var(--dark);
+    position: absolute;
+    opacity: .7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.forgot-password{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width:30%;
+    height: 200px;
+    background: white;
+    /* margin: 0px auto; */
+    text-align: center;
+    border-radius: 5px;
+    z-index: 100;
+}
+.forgot-password button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50%;
+    color: red;
+    background: white;
+    cursor: pointer;
+}
+.forgot-password button:hover{
+    background: red;
+    color: white;
+    transition: .3s ease-in-out;
+}
+.forgot-password h4{
+    margin: 8% 0px 4% 0px;
+
+}
+.forgot-password input{
+    width: 70%;
+    padding: .5rem 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.forgot-password input:last-of-type{
+    background:rgb(239, 99, 123);
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+.forgot-password p{
+    color: red;
+}
+header {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0pt 2pt 2px rgb(208, 208, 208);
+}
+.logo h1 {
+    color: var(--dark);
+    font-size: 25px;
+}
+.logo h1 .span1 {
+    color: var(--text-blue);
+}
+.logo h1 .span2 {
+    color: var(--pink);
+}
+footer .logo h1 .span1 {
+    color: var(--text-grey);
+}
+.home {
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section h4{
+    font-size: 18px;
+}
+.left-section h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    margin: 20px 0;
+}
+.left-section p{
+    font-size: 14px;
+    color: var(--text-grey);
+    margin-bottom: 20px;
+}
+.left-section a{
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.right-section .btns button {
+    outline: none;
+    background: none;
+    border: none;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.right-section .form {
+    background: white;
+    padding: 20px;
+    width: 380px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2pt 2pt 4px #b2b2b2;
+    display: flex;
+    justify-content: space-between;
+}
+.right-section .form h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+.right-section .form-card {
+    display: none;
+    background: white;
+    padding: 20px;
+    width: 345px;
+    border-radius: 20px;
+}
+.right-section .form-card.staff{
+    display: block;
+}
+.right-section .form-card form input[type='text'],
+.right-section .form-card form input[type='password']{
+    width: 300px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+}
+.right-section .form-card form input[type='submit'] {
+    width: 200px;
+    padding: 5px 0;
+    border-radius: 8px;
+    border: 1px solid rgb(239, 99, 123);
+    background: var(--pink);
+    color: var(--light);
+    margin-bottom: 10px;
+    transition: .2s ease;
+}
+.right-section .form-card form input[type='submit']:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+}
+
+.right-section .form-card p {
+    color: gray;
+    font-size: 14px;
+}
+.right-section .form-card p a {
+    text-decoration: none;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--text-blue);
+    color: var(--text-grey);
+}
+footer p {
+    font-size: 14px;
+}
